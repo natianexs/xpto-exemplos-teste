@@ -7,8 +7,8 @@ class ValidatorsEmailTest(unittest.TestCase):
 
     def test_email_valid(self):
         result = Validators.check_email(self, "natianexvs@gmail.com")
-        self.assertEqual(result, True)
+        self.assertTrue(result, True)
 
     def test_email_invalid(self):
         result = Validators.check_email(self, "natianexvs.com")
-        self.assertEqual(result, False)
+        self.assertFalse(result, False)
